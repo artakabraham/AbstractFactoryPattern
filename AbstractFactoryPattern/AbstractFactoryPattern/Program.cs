@@ -6,7 +6,11 @@ namespace AbstractFactoryPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FactoryDataItem factoryDataItem = new FactoryDataItem(5555);
+            var ccc = factoryDataItem.DataItem;
+
+            Console.WriteLine(ccc);
+
         }
     }
 }
