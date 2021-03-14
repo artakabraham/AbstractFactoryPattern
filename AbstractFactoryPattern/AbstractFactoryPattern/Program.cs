@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbstractFactoryPattern.Shapes;
+using System;
 
 namespace AbstractFactoryPattern
 {
@@ -6,10 +7,11 @@ namespace AbstractFactoryPattern
     {
         static void Main(string[] args)
         {
-            FactoryDataItem factoryDataItem = new FactoryDataItem(5555);
-            var ccc = factoryDataItem.DataItem;
+            ShapeFactory shapefactory = new ShapeFactory();
+            Circle circle = (Circle) shapefactory.GetData(1).circle;
+            var mm = shape.DataItem;
 
-            Console.WriteLine(ccc);
+            Console.WriteLine(mm);
 
         }
     }
