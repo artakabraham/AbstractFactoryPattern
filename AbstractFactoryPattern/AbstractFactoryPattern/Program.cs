@@ -1,5 +1,4 @@
 ﻿using AbstractFactoryPattern.Shapes;
-using System;
 
 namespace AbstractFactoryPattern
 {
